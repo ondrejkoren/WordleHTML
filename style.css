@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: rgb(247, 234, 218);  
+}
+.container{
+    max-width: 500px;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    
+}
+
+.container h1{
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+    justify-self: center;
+}
+.newGame {
+    display: grid;
+    justify-self: center;
+    padding: 0.5rem;
+}
+
+.tile{
+    border-radius: 0.33rem;
+    display: flex;
+    height: 50px;
+    border: 2px solid rgb(82, 82, 82);
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(94, 93, 93);
+    background-color: white;
+    
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.25rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+#keyboard{
+    display: grid;
+    justify-items: center;
+    gap: 0.1rem;
+    
+}
+button{
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgb(27, 127, 209);
+    color: wheat;
+    border-radius: 0.2rem;
+}
+
+button:active{
+    background-color: rgb(130, 168, 199);
+    color: rgb(251, 255, 0);
+}
+
+#keyboard button {
+    
+    height: 31px;
+    width: 30px;
+    margin: 0.05rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+#gameover{
+    visibility: hidden;
+    color: green;
+}
+.true{
+    background-color: green;
+    color: white;
+    transform: rotateY(360deg);
+    transition: transform 1s;
+}
+.maybe{
+    background-color: rgb(255, 209, 3);
+    color: white;
+    transform: rotateY(360deg);
+    transition: transform 1s;
+}
+.wrong{
+    background-color: rgb(102, 105, 102);
+    color: white;
+    transform: rotateY(360deg);
+    transition: transform 1s;
+}
