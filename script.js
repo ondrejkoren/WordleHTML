@@ -69,7 +69,8 @@ function play(){
         console.log(word);
         keyboard.addEventListener("click",handleClick);
         guess = "";
-
+        gameover.innerText = "!! YOU WIN !!";
+        gameover.style.color = "green";
 }
 
 //handle input
