@@ -71,6 +71,7 @@ function play(){
         keyboard.addEventListener("click",handleClick);
         guess = "";
         solution.innerText = "";
+        solution.innerHTML;
         gameover.innerText = "!! YOU WIN !!";
         gameover.style.color = "green";
 }
