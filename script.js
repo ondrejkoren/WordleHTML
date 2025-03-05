@@ -7,6 +7,7 @@ const keyboard1 = document.getElementById("keyboard1");
 const keyboard2 = document.getElementById("keyboard2");
 const keyboard3 = document.getElementById("keyboard3");
 const board = document.getElementById("board");
+const solution = document.getElementById("solution");
 let counter = 1;
 let playing = 1;
 let helper = 0;
@@ -117,6 +118,7 @@ function play(){
                 gameover.style.visibility = "visible";
                 gameover.style.color = "red";
                 keyboard.removeEventListener("click",handleClick);
+                solution.innerText = word;
             }
         }
 
