@@ -70,6 +70,7 @@ function play(){
         console.log(word);
         keyboard.addEventListener("click",handleClick);
         guess = "";
+        solution.innerText = "";
         gameover.innerText = "!! YOU WIN !!";
         gameover.style.color = "green";
 }
